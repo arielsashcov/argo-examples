@@ -3,10 +3,10 @@ appName: myhelmapp
 port: 80
 
 configmap:
-  name: myhelmapp-configmap-v3
+  name: myhelmapp-configmap-v4
   data:
-    CUSTOM_HEADER: 'This app was deployed with helm!'
+    CUSTOM_HEADER: 'This app was deployed with helm 123!'
 
 image:
-  name: 192.168.84.101:8090/cssp/csspfront
+  name: devopsjourney1/mywebapp
   tag: latest
